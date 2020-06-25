@@ -1,0 +1,92 @@
+
+* {
+  font-family: sans-serif;
+}
+
+html {
+  background-image: url("./imgs/background.jpg");
+
+}
+
+.container {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+.center-container {
+  display: inline-block;
+  display: relative;
+  height: 600px;
+  width: 600px;
+  padding-left: 28%;
+  padding-top: 10%;
+}
+
+.sully-img-container {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  padding: 0px;
+  top: 0%;
+  margin: 0;
+}
+
+.sully-img-container img {
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+h1 {
+  display: inline-block;
+}
+h4 {
+  font-weight: normal;
+}
+
+.sullyinfo {
+  margin-left: 1em;
+  display: inline-block;
+  position: relative;
+  width: 50%;
+}
+
+.sullyinfo h1 h4{
+  display: inline-block;
+}
+
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+.sullyinfo:hover{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
